@@ -3,7 +3,7 @@
 title: Ganni blog
 locale: en_US
 description: Ganni's ramblings about everything
-logo: site-logo.png
+logo: #site-logo.png
 search: true
 url: http://ganni.github.io
 
