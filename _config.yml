@@ -1,52 +1,53 @@
-# Build settings
-markdown: redcarpet
+# Site wide configuration
+
+title: Ganni blog
+locale: en_US
+description: Ganni's ramblings about everything
+logo: site-logo.png
+search: true
+url: http://ganni.github.io
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
 highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
 
-# Site settings
-title: "Ganni Blog"
-description: "personal blog"
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  use_coderay: false
 
-email: ganni4@gmail.com
-#blog logo
-logo: "/assets/images/ganni-eye.png"
-# blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
 
-name: 'Nyamka Ganni'
-author: 'Nyamka Ganni'
-author_image: "/assets/images/ganni-avatar.jpg"
 
-paginate:	5
-
-url: "http://ganni.github.io" # the base hostname & protocol for your site
-baseurl: ""
-
-# social icons and sharing options
-social:
-  - icon:	twitter
-    url:	https://twitter.com/ganni4
-    desc: Follow me on twitter
-    share_url: http://twitter.com/share
-    share_title: ?text=
-    share_link: "&amp;url="
-
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: //www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
-
-  - icon:	github
-    url:	https://github.com/ganni
-    desc:	Fork me on github
-    share_url:
-    share_title:
-    share_link:
-
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
+# Site owner
+owner:
+  name: Nyamka Ganni
+  avatar: bio-photo.jpg
+  email: ganni4@gmail.com
+  disqus-shortname: gannigithubio
+  twitter: ganni4
+  facebook: #username
+  github: ganni
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram: ganni4
+  flickr: #username
+  tumblr: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot: 
+  bing-verify:
