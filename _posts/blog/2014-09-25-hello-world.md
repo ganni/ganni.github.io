@@ -21,7 +21,7 @@ share: true
 ### Энэ юун дээр хийгдсэн блог вэ?
 ------------
 Энгийн markdown дээр бичигдсэн статик текст файл дээр суурилсан [Jekyll][jekyll] хэмээх блог бүтээгчээр хийгдсэн болно. Мөн Jekyll-н нээлттэй эхтэй танилцахыг хүсвэл [Jekyll-н GitHub хуудс][jekyll-gh]аар зочлоорой.
-![Jekyll]({{ site.url }}/images/oktojekyll.png)
+![Jekyll](http://raw.githubusercontent.com/ganni/ganni.github.io/master/images/octojekyll.png)
 {: .pull-right}
 
 ### Хаана хостлогдсон бэ?
