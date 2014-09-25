@@ -33,7 +33,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Nyamka Ganni
-  avatar: bio-photo.jpg
+  avatar: ganni-avatar.jpg
   email: ganni4@gmail.com
   disqus-shortname: gannigithubio
   twitter: ganni4
