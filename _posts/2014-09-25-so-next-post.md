@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: post
 title: "So, next post"
 published: True
 categories: []
