@@ -13,7 +13,7 @@ share: true
 ---
 Байнга хэрэглэгддэг командуудыг дараа нь харж байхад амар учир энд хадгалахаар шийдлээ. 
 
-{% highlight shell %}
+~~~
 git init
 git add -A
 git commit -m "message"
@@ -48,4 +48,4 @@ rake test
 rake test:prepare
 bundle exec rake test #force
 bundle install --without production
-{% endhighlight %}
+~~~
