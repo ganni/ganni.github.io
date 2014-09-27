@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Git, Rails дээр байнга хэрэглэгддэг командууд"
-modified: 2014-09-27 20:20:37
+modified: 
 categories: blog
 excerpt:
 tags: []
 image:
   feature:
-date: 2014-09-25 17:26:48
+date: 2014-09-27 20:20:37
 comments: true
 share: true
 ---
