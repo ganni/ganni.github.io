@@ -11,6 +11,8 @@ date: 2014-09-25 17:26:48
 comments: true
 share: true
 ---
+Байнга хэрэглэгддэг командуудыг дараа нь харж байхад амар учир энд хадгалахаар шийдлээ. 
+
 {% highlight shell %}
 git init
 git add -A
