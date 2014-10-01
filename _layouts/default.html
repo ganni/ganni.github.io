@@ -11,6 +11,10 @@
       <div class="wrapper">
         {{ content }}
       </div>
+      {% if site.disqus_shortname and page.comments == true %}
+        <div id="disqus_thread"></div>
+        {% include disqus.html %}
+      {% endif %}
 
     {% include footer.html %}
 

@@ -12,7 +12,8 @@ body {
     line-height: $base-line-height;
     font-weight: lighter;
     color: $text-color;
-    background-color: $background-color;
+    //background-color: $background-color;
+    background-image: url(../images/geometry2.png);
     margin: 0 auto;
     width: 100%;
     -webkit-text-size-adjust: 100%;
@@ -100,12 +101,13 @@ h5, h6 { font-size: 150%; }
 /**
  * Links
  */
-a {
-    color: $brand-color;
+a {    
     text-decoration: none;
-
+    &:link, &:active { 
+      color:#316d96; 
+    }
     &:visited {
-        color: darken($brand-color, 15%);
+        color: lighten($brand-color, 15%);
     }
 
     &:hover {
