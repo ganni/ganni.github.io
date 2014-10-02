@@ -10,6 +10,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 twitter_username: ganni4
 github_username:  ganni
 disqus_shortname: gannigithubio
+google_analytics: UA-3158208-9
 
 # Build settings
 markdown: kramdown
