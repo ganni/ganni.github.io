@@ -5,13 +5,13 @@ div.breaker { clear:both; }
 div.page-content {
   background:white;
   padding:70px 60px;
-  margin-bottom:60px;
+  margin-bottom: 60px;
   &.full-bleed {
-    padding:0;
+    padding: 0;
   }
   &.photo {
     padding: 0;
-    margin:0;
+    margin: 0;
   }
   img, iframe {
     display:block; max-width:100%; margin:1em 0;
@@ -22,8 +22,8 @@ div.page-content {
 }
 
 div.home div.end {
-  padding:40px;
-  text-align:center;
+  padding: 40px;
+  text-align: center;
 }
 
 /* --------------------------------------------------------------------------------------------- */
@@ -42,7 +42,7 @@ a.post-excerpt {
   }
   .padded-content {
     display: block;
-    padding: 40px;
+    padding: $spacing-unit;
   }
 }
   a.post-excerpt.photo {

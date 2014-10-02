@@ -54,21 +54,60 @@ hr {
 /**
  * Figures
  */
-figure > img {
-    display: block;
-}
 
-figcaption {
+figure {
+  display:block;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom:  $spacing-unit/2;
+  > img {
+    width: 100%;
+  }
+  > figcaption {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: $small-font-size*1.25;
+    line-height: 1.4;
+    color: $grey-color-dark;
+    clear: both;
+  }
+  @media screen and (min-width: 680px){
+  position: relative;
+  display:block;
+  max-width: 75%;
+  width: 30%;  
+  box-sizing: border-box;
+  margin-top:     5px;
+  margin-bottom:  10px;
+  margin-left:    -$spacing-unit;
+  margin-right:   $spacing-unit/2;
+  float: left;
+  &.img-right {
+    margin-right:    -$spacing-unit;
+    margin-left: $spacing-unit/2;
+    float: right;
+  }
+  > figcaption {
+    position: relative;
+    left: 0px;
+    clear: both;
     font-size: $small-font-size;
+  }
+  }
 }
-
+figure::after {
+  content:"";
+clear:both;
+}
 
 
 /**
  * Lists
  */
 ul, ol {
-    margin-left: $spacing-unit;
+    margin-left: $spacing-unit/2;
 }
 
 li {
