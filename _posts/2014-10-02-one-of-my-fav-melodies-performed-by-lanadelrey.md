@@ -8,4 +8,4 @@ comments: true
 
 Миний хамгийн дуртай аянуудын нэг болох Ромео Жулиета хоёрын аяыг Lana Del Rey өөрчлөн дуу болгожээ. Гоё. 
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/0MaAPzg_YbQ?list=PLLCMr6qyus1vm2tpzqjLm5L67gma445fY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/0MaAPzg_YbQ" frameborder="0" allowfullscreen></iframe>
