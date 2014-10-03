@@ -1,7 +1,7 @@
 ---
 layout: post
 title: One of my fav melodies performed by lanadelrey
-photo_url: "http://raw.githubusercontent.com/ganni/ganni.github.io/master/images/romeo-juliet.jpg"
+photo_url: {{site.url}}/images/romeo-juliet.jpg
 comments: true
 ---
 ![]({{site.url}}/images/romeo-juliet.jpg)

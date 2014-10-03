@@ -10,7 +10,7 @@ description: "Яг энэ миний блог шиг блогтой болохы
 
 Яг энэ миний блог шиг блогтой болохыг хүсвэл наашаа анхаарлаа хандуулаарай. [Энд]({% post_url 2014-09-25-hello-world %}) товч тайлбарласанчлан миний блог [Jekyll](http://jekyllrb.com) дээр бичигдэж [Github](http://github.com)-д үнэгүйгээр хостлогдсон. Сэтгэгдэл нь мөн л үнэгүй _сэтгэгдлийн машин_ болох [Disqus](http://disqus.com)-г ашигласан. Эдгээрийг ашигласан блогний онцлогуудыг товч дурдъя: 
 
-<figure class="img-right"><img src="http://raw.githubusercontent.com/ganni/ganni.github.io/master/images/octojekyll.png"></img><figcaption>github octocat</figcaption></figure>
+<figure class="img-right"><img src="{{site.url}}/images/octojekyll.png"></img><figcaption>github octocat</figcaption></figure>
 
 - **Jekyll** гэж юу вэ?
 
