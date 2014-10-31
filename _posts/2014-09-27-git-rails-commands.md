@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git, Rails дээр байнга хэрэглэгддэг командууд"
-description: "Байнга хэрэглэгддэг командуудыг дараа нь харж байхад амар учир энд хадгалахаар шийдлээ. "
+excerpt: "Байнга хэрэглэгддэг командуудыг дараа нь харж байхад амар учир энд хадгалахаар шийдлээ. "
 comments: true
 ---
 
@@ -50,6 +50,10 @@ heroku config:set AABB=aabb
 heroku config
 # заримдаа timed-out алдаа гарах үед run:detached ашиглахад болох тохиолдол бий
 heroku run:detached rake db:migrate
+$ heroku maintenance:on
+$ git push heroku
+$ heroku run rake db:migrate
+$ heroku maintenance:off
 {% endhighlight %}
 
 ### Rails commands

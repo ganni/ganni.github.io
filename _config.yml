@@ -17,6 +17,5 @@ markdown: kramdown
 highlighter: pygments
 
 port: 3000
-lsi: TRUE
 future: TRUE
 permalink: /:year/:month/:day/:title.html
