@@ -1,6 +1,6 @@
 ---
 layout: post
-title: One of my fav melodies performed by Lana
+title: OLD MONEY: Beautiful rendition of an old melody
 photo_url: "http://raw.githubusercontent.com/ganni/ganni.github.io/master/images/romeo-juliet.jpg"
 comments: true
 ---

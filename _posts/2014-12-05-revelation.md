@@ -2,7 +2,7 @@
 layout: post
 title: revelation
 published: True
-categories: []
+categories: [quote]
 tags: []
 ---
 
