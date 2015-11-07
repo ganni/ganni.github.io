@@ -1,7 +1,8 @@
 ---
 layout: post
-title: OLD MONEY: Beautiful rendition of an old melody
-photo_url: "http://raw.githubusercontent.com/ganni/ganni.github.io/master/images/romeo-juliet.jpg"
+title: OLD MONEY Beautiful rendition of an old melody
+photo: true
+photo_url: "/images/romeo-juliet.jpg"
 comments: true
 ---
 ![]({{site.url}}/images/romeo-juliet.jpg)

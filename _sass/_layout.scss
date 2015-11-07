@@ -1,5 +1,12 @@
 div.breaker { clear:both; }
 
+#recent-posts {
+// column-gap: 15px;
+  -webkit-column-width: 380px;
+   -moz-column-width: 380px;
+        column-width: 380px;
+}
+
 /* --------------------------------------------------------------------------------------------- */
 /* main page-content */
 div.page-content {
@@ -32,7 +39,11 @@ div.page-content {
 a.post-excerpt {
   display: block;
   color: inherit;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
   border-bottom: 4px solid $grey-color-light;
+  width:100%;
   .post-meta {
     display:inline-block;
     padding-right:8px;
@@ -42,6 +53,14 @@ a.post-excerpt {
   .padded-content {
     display: block;
     padding: $spacing-unit/2;
+    .image {
+      padding:0;
+      height:200px;
+      max-height: 200px;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
   }
   .title {
     font-weight: bold;
@@ -53,7 +72,6 @@ a.post-excerpt {
   }
   @media screen and (min-width: 700px){
     //position:relative;
-    width:50%; 
     height: auto;
     overflow: hidden;
     float:left;
@@ -64,7 +82,7 @@ a.post-excerpt {
       padding: $spacing-unit;
     }
   }
-} 
+}
 
 /* --------------------------------------------------------------------------------------------- */
 /* posts */
@@ -84,8 +102,8 @@ a.post-excerpt {
     color: $grey-color;
     margin-bottom: 2em;
   }
-}  
-  
+}
+
 
 
 /* prettyprint */
@@ -130,9 +148,6 @@ header h1 a {
   text-decoration: none;
 }
 header h1 a:hover {
-  -webkit-transform: translate3d(0,2px,0);
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
   text-decoration: none;
   cursor:pointer;
 }
