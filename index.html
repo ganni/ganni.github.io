@@ -7,7 +7,7 @@ layout: default
     <a href="{{ post.url}}" class="post-excerpt">
       <div class="padded-content">
         <div class="title">{{ post.title }}</div>
-        {% if post.photo && post.photo_url %}
+        {% if post.photo and post.photo_url %}
           <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
         {% else %}
           <span class="post-meta">{{ post.date | date: "%b %Y" }}</span>

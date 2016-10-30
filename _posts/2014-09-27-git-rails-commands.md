@@ -7,11 +7,11 @@ comments: true
 
 Байнга хэрэглэгддэг командуудыг дараа нь харж байхад амар учир энд хадгалахаар шийдлээ. 
 
-###Git commands
+### Git commands
 
 Гит дөнгөж эхлэж байхад байнга ямар команд хэрэглэхээ мартах явдал их гардаг шүү дээ. Өөртөө зориулж гаргасан жагсаалт маань.
 
-{% highlight bash %}
+``` bash
 # Суулгасны дараах анхны тохиргоо, нэр имэйл
 git config --global user.name "Name Name"
 git config --global user.email "email@mail.com"
@@ -31,13 +31,13 @@ git branch -d mybranch #delete branch
 git push
 git checkout master
 git merge mybranch
-{% endhighlight %}
+```
 
 ### Git ба Heroku
 
 heroku дээр ажиллахад хэрэгтэй хэсэг
 
-{% highlight bash %}   
+``` bash
 heroku create
 git push heroku master
 git push heroku
@@ -54,11 +54,11 @@ $ heroku maintenance:on
 $ git push heroku
 $ heroku run rake db:migrate
 $ heroku maintenance:off
-{% endhighlight %}
+```
 
 ### Rails commands
 
-{% highlight bash %}
+``` bash
 rails new appname
 rails g controller MyCont cont1 cont2
 rails destroy controller MyCont cont1 cont2
@@ -73,4 +73,4 @@ rake test
 rake test:prepare
 bundle exec rake test #force
 bundle install --without production
-{% endhighlight %}
+```

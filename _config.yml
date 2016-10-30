@@ -15,7 +15,7 @@ chat: TRUE
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 port: 3000
 future: TRUE

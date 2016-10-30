@@ -72,7 +72,7 @@ figure {
     position: relative;
     display:block;
     max-width: 75%;
-    width: 30%;  
+    width: 30%;
     box-sizing: border-box;
     margin-top:     5px;
     margin-bottom:  10px;
@@ -130,10 +130,10 @@ h5, h6 { font-size: 150%; }
 /**
  * Links
  */
-a {    
+a {
     text-decoration: none;
-    &:link, &:active { 
-      color:#316d96; 
+    &:link, &:active {
+      color:#316d96;
     }
     &:visited {
         color: lighten($brand-color, 15%);
@@ -167,11 +167,11 @@ blockquote {
 /**
  * Code formatting
  */
-pre { 
+pre {
   border-left:10px solid lighten($brand-color, 10%);
   margin-left:-60px;
   margin-right:-58px;
-  padding:0.1em 0 0.4em 50px;    
+  padding:0.1em 0 0.4em 50px;
   overflow-x: auto;
   //background-color:$grey-color-light;
 
@@ -183,7 +183,7 @@ pre {
   }
 }
 code {
-  font-family: ‘Lucida Console’, Monaco, monospace;
+  font-family: 'Lucida Console', Monaco, monospace;
   font-size: $small-font-size;
   background-color: #f6f9fa;
   color:black;
