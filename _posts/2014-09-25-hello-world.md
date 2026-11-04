@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Hello World"
-comments: true
 photo: true
 photo_url: images/octojekyll.png
 ---

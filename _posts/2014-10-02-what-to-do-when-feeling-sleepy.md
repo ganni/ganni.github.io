@@ -2,7 +2,6 @@
 layout: post
 title: what to do when feeling sleepy
 published: True
-comments: yes
 ---
 
 <figure class="img-right"><img src="{{site.url}}/images/coffee.jpg"><figcaption>First coffee was with milk!</figcaption></figure>

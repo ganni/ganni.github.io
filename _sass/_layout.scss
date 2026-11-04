@@ -268,11 +268,6 @@
   }
 }
 
-.comments {
-  max-width: $content-width;
-  margin: 3rem auto 0;
-}
-
 /* goodreads widget */
 
 .gr_grid_container {
@@ -315,5 +310,5 @@
 }
 
 @media print {
-  .site-header .site-nav, .site-footer, .post-nav, .comments { display: none; }
+  .site-header .site-nav, .site-footer, .post-nav { display: none; }
 }

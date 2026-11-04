@@ -6,7 +6,6 @@ baseurl: ""
 url: "https://ganni.github.io"
 twitter_username: ganni4
 github_username:  ganni
-disqus_shortname: gannigithubio
 chat: false
 
 # Build settings

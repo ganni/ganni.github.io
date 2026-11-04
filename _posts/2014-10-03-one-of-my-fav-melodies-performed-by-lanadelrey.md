@@ -3,7 +3,6 @@ layout: post
 title: OLD MONEY Beautiful rendition of an old melody
 photo: true
 photo_url: "/images/romeo-juliet.jpg"
-comments: true
 ---
 ![]({{site.url}}/images/romeo-juliet.jpg)
 
