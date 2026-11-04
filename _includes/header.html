@@ -1,16 +1,14 @@
-<header>
+<header class="site-header">
   <div class="wrapper">
-    <h1><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
 
     <nav class="site-nav">
-      <div class="trigger">
-          <a class="page-link" href="/">Blog</a> |
-        {% for page in site.pages %}
-          {% if page.title and page.isnav %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> |
-          {% endif %}
-        {% endfor %}
-      </div>
+      <a class="page-link{% if page.url == '/' or page.layout == 'post' %} is-active{% endif %}" href="{{ '/' | relative_url }}">Blog</a>
+      {%- for p in site.pages %}
+        {%- if p.title and p.isnav %}
+      <a class="page-link{% if page.url == p.url %} is-active{% endif %}" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+        {%- endif %}
+      {%- endfor %}
     </nav>
   </div>
 </header>

@@ -2,22 +2,23 @@
 layout: default
 ---
 
-<div class="page-content full" id="recent-posts">
-  {% for post in site.posts %}
-    <a href="{{ post.url}}" class="post-excerpt">
-      <div class="padded-content">
-        <div class="title">{{ post.title }}</div>
-        {% if post.photo and post.photo_url %}
-          <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
-        {% else %}
-          <span class="post-meta">{{ post.date | date: "%b %Y" }}</span>
-          {{ forloop.index }}
-          <span class="body">{{ post.excerpt | strip_html }}</span>
-        {% endif %}
-      </div>
-    </a>
-  {% endfor %}
+<p class="intro">{{ site.description }}</p>
 
-  <div class="breaker"></div>
-</div>
-<!--   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+<ul class="post-list">
+  {%- for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}" class="post-card">
+      {%- if post.photo and post.photo_url %}
+      <img class="post-card-image" src="{{ post.photo_url | relative_url }}" alt="" loading="lazy">
+      {%- endif %}
+      <span class="post-card-body">
+        <time class="post-card-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+        <span class="post-card-title">{{ post.title }}</span>
+        {%- unless post.photo and post.photo_url %}
+        <span class="post-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 45 }}</span>
+        {%- endunless %}
+      </span>
+    </a>
+  </li>
+  {%- endfor %}
+</ul>
