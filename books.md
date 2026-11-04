@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Books
+title: Ном
 isnav: true
 permalink: /books/
 include: goodreads.html

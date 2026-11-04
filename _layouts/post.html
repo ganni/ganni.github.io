@@ -1,16 +1,35 @@
 ---
 layout: default
 ---
-<div class="page-content{% if page.photo_url %} photo-post{% endif %}">
-<div class="post">
-  <header class="post-header" {%if page.photo_url %} style="display:none;"{% endif %}>
+<article class="page-content post{% if page.categories contains 'quote' %} post--quote{% endif %}">
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time>
+      {%- if page.author %} · {{ page.author }}{% endif %}
+      {%- if page.meta %} · {{ page.meta }}{% endif %}
+    </p>
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%Y - %m - %d" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-  <article class="post-content">
+  <div class="post-content">
     {{ content }}
-  </article>
-  <div class="breaker"></div>
-</div>
-</div>
+  </div>
+
+  {%- if page.previous or page.next %}
+  <nav class="post-nav">
+    {%- if page.previous %}
+    <a class="prev" href="{{ page.previous.url | relative_url }}"><span>← Өмнөх</span>{{ page.previous.title }}</a>
+    {%- endif %}
+    {%- if page.next %}
+    <a class="next" href="{{ page.next.url | relative_url }}"><span>Дараах →</span>{{ page.next.title }}</a>
+    {%- endif %}
+  </nav>
+  {%- endif %}
+</article>
+
+{%- if site.disqus_shortname and page.comments %}
+<section class="comments">
+  <div id="disqus_thread"></div>
+  {% include disqus.html %}
+</section>
+{%- endif %}

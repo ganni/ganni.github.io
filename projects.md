@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: Төслүүд
 isnav: false
 permalink: /projects/
 include: projects.html

@@ -2,22 +2,44 @@
 layout: default
 ---
 
-<div class="page-content full" id="recent-posts">
-  {% for post in site.posts %}
-    <a href="{{ post.url}}" class="post-excerpt">
-      <div class="padded-content">
-        <div class="title">{{ post.title }}</div>
-        {% if post.photo and post.photo_url %}
-          <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
-        {% else %}
-          <span class="post-meta">{{ post.date | date: "%b %Y" }}</span>
-          {{ forloop.index }}
-          <span class="body">{{ post.excerpt | strip_html }}</span>
-        {% endif %}
-      </div>
-    </a>
-  {% endfor %}
+<p class="intro">{{ site.description }}</p>
 
-  <div class="breaker"></div>
+{%- assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+<div class="archive">
+  {%- for year in years %}
+  <section class="archive-year" aria-labelledby="year-{{ year.name }}">
+    <h2 class="archive-year-label" id="year-{{ year.name }}">{{ year.name }}</h2>
+    <ol class="archive-list">
+      {%- for post in year.items %}
+        {%- assign excerpt = post.excerpt | strip_html | strip %}
+        {%- if post.categories contains 'quote' %}
+          {%- assign parts = excerpt | split: '―' %}
+      <li class="archive-item archive-item--quote">
+        <a href="{{ post.url | relative_url }}">
+          <blockquote>{{ parts[0] | strip }}</blockquote>
+          {%- if parts[1] %}
+          <cite>{{ parts[1] | strip }}</cite>
+          {%- endif %}
+        </a>
+      </li>
+        {%- else %}
+      <li class="archive-item">
+        <a href="{{ post.url | relative_url }}">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m.%d" }}</time>
+          <span class="archive-text">
+            <span class="archive-title">{{ post.title }}</span>
+            {%- if excerpt != "" %}
+            <span class="archive-excerpt">{{ excerpt | truncatewords: 28 }}</span>
+            {%- endif %}
+          </span>
+          {%- if post.photo and post.photo_url %}
+          <img class="archive-thumb" src="{{ post.photo_url | relative_url }}" alt="" loading="lazy">
+          {%- endif %}
+        </a>
+      </li>
+        {%- endif %}
+      {%- endfor %}
+    </ol>
+  </section>
+  {%- endfor %}
 </div>
-<!--   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->

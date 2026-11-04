@@ -1,32 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="mn">
 
   {% include head.html %}
 
   <body>
+    <a class="skip-link" href="#main">Үндсэн агуулга руу</a>
 
     {% include header.html %}
 
-
+    <main id="main" class="site-main">
       <div class="wrapper">
         {{ content }}
       </div>
-      {% if site.disqus_shortname and page.comments == true %}
-        <div id="disqus_thread"></div>
-        {% include disqus.html %}
-      {% endif %}
+    </main>
 
     {% include footer.html %}
-    {% include masonry.html %}
-
-    {% if site.google_analytics %}
-      {% include google-analytics.html %}
-    {% endif %}
 
     {% if site.chat %}
       {% include tawk-chat.html %}
     {% endif %}
-
   </body>
 
 </html>
